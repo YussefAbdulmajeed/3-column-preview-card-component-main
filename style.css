@@ -1,0 +1,153 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* normalization  */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* color */
+:root {
+    --caed1:hsl(31, 77%, 52%);
+    --caed2:hsl(184, 100%, 22%);
+    --caed3:hsl(179, 100%, 13%);
+    --paragraph:hsla(0, 0%, 100%, 0.75);
+}
+/* padage */
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.sec1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container .card {
+    padding: 50px 40px;
+}
+
+.container .card .icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 35px;
+}
+
+.container .card .icon i {
+    width: 35px;
+    height: 35px;
+}
+
+.container .card .text h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 38px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.container .card .text p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container .card a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 135px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.container .card a:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.container .one a {
+    color: var(--caed1);
+}
+
+.container .two a {
+    color: var(--caed2);
+}
+
+.container .three a {
+    color: var(--caed3);
+}
+
+.container .card .text {
+    margin-bottom: 70px;
+    width: 192px;
+}
+
+.container .one {
+    background-color: var(--caed1);
+}
+.container .two {
+    background-color: var(--caed2);
+}
+.container .three {
+    background-color: var(--caed3);
+}
+
+
+@media (max-width:500px) {
+    .sec1 {
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .container{
+        width: 300px;
+        grid-template-columns: 1fr;
+    }
+
+    .container .card .icon {
+        margin-bottom: 20px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .container .card .icon img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .container .card {
+        padding: 20px 40px;
+    }
+
+    .container .card .text {
+        width: 210px;
+        margin-bottom: 20px;
+    }
+
+    .container .card .text h2 {
+        margin-bottom: 15px;
+    }
+
+    .container .card a {
+        padding: 7px 10px;
+        width: 112px;
+    }
+
+}
